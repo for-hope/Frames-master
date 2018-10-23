@@ -1,0 +1,92 @@
+/*
+ * Copyright (c) 2018. Jahir Fiquitiva
+ *
+ * Licensed under the CreativeCommons Attribution-ShareAlike
+ * 4.0 International License. You may not use this file except in compliance
+ * with the License. You may obtain a copy of the License at
+ *
+ *    http://creativecommons.org/licenses/by-sa/4.0/legalcode
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ext.details = [
+        // Core app details
+        appId   : 'Frames',
+        appGroup: 'jahirfiquitiva.apps',
+        libGroup: 'jahirfiquitiva.libs',
+]
+
+ext.versions = [
+        // Projects
+        minSdk               : 16,
+        targetSdk            : 28,
+        buildTools           : '28.0.3',
+        versionCode          : 253,
+        versionName          : '2.5.3',
+        // Gradle Plugins
+        gradle               : '3.2.0',
+        kotlin               : '1.2.71',
+        libs                 : '2.1',
+        // Dependencies
+        supportLibs          : '28.0.0',
+        room                 : '1.1.1',
+        permissions          : '1.0.0',
+        materialDialogs      : '0.9.6.0',
+        glide                : '4.8.0',
+        kext                 : '5f32f5a',
+        sectionedRecyclerView: '588dab5',
+        rvFastScroll         : 'f1b610a',
+        chips                : '0.0.7',
+        iaps                 : '1.0.44',
+        muzeiApi             : '2.0',
+        licensesDialog       : '1.8.3',
+        checker              : '1.2.4',
+        oneSignal            : '3.10.1'
+]
+
+ext.gradlePlugins = [
+        android: 'com.android.tools.build:gradle:' + versions.gradle,
+        kotlin : 'org.jetbrains.kotlin:kotlin-gradle-plugin:' + versions.kotlin,
+        libs   : 'com.github.dcendents:android-maven-gradle-plugin:' + versions.libs
+]
+
+ext.libraries = [
+        // Kotlin
+        kotlin               : 'org.jetbrains.kotlin:kotlin-stdlib:' + versions.kotlin,
+        // Architecture Components
+        room                 : 'android.arch.persistence.room:runtime:' + versions.room,
+        roomCompiler         : 'android.arch.persistence.room:compiler:' + versions.room,
+        // Permissions
+        permissions          : 'com.github.fondesa:kpermissions:' + versions.permissions,
+        // Material Dialogs
+        dialogsCore          : 'com.afollestad.material-dialogs:core:' + versions.materialDialogs,
+        dialogsCommons       : 'com.afollestad.material-dialogs:commons:' + versions.materialDialogs,
+        // Glide Image Loading
+        glide                : 'com.github.bumptech.glide:glide:' + versions.glide,
+        gliderv              : 'com.github.bumptech.glide:recyclerview-integration:' + versions.glide,
+        glideCompiler        : 'com.github.bumptech.glide:compiler:' + versions.glide,
+        // kext
+        kext                 : 'com.jahirfiquitiva.kext:core:' + versions.kext,
+        archHelpers          : 'com.jahirfiquitiva.kext:archhelpers:' + versions.kext + '@aar',
+        ziv                  : 'com.jahirfiquitiva.kext:ziv:' + versions.kext,
+        // Sectioned RecyclerView
+        sectionedRecyclerView: 'com.jahirfiquitiva:sectioned-recyclerview:' + versions.sectionedRecyclerView + '@aar',
+        // RecyclerView FastScroll
+        rvFastScroll         : 'com.jahirfiquitiva:recycler-fast-scroll:' + versions.rvFastScroll + '@aar',
+        // Chips
+        chips                : 'com.jahirfiquitiva:ChipView:' + versions.chips + '@aar',
+        // In-App Purchases
+        iaps                 : 'com.anjlab.android.iab.v3:library:' + versions.iaps,
+        // Muzei API
+        muzeiApi             : 'com.google.android.apps.muzei:muzei-api:' + versions.muzeiApi,
+        // Licenses Dialog
+        licenses             : 'de.psdev.licensesdialog:licensesdialog:' + versions.licensesDialog,
+        // License Checker
+        checker              : 'com.github.javiersantos:PiracyChecker:' + versions.checker,
+        // OneSignal
+        oneSignal            : 'com.onesignal:OneSignal:' + versions.oneSignal
+]
